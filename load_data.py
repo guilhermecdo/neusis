@@ -37,7 +37,7 @@ def load_data(target):
             image = state["ImagingSonar"]
             s = image.shape
             image[image < 0.2] = 0
-            image[s[0]- 200:, :] = 0
+            #image[s[0]- 200:, :] = 0
             pose = state["PoseSensor"]
             images.append(image)
             sensor_poses.append(pose)
